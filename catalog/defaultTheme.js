@@ -12,7 +12,7 @@ export default {
 
   // Used in PageHeader
   // A4343A CB333B
-  pageHeadingBackground: "#A4343A",
+  pageHeadingBackground: "#666666",
   pageHeadingTextColor: "#fff",
 
   // Used in Menu and PageHeader to make sure the top parts have
@@ -27,7 +27,7 @@ export default {
   // Typography: headings.
   brandColor: "#A4343A",
 
-  sidebarColor: "#f9f9f9",
+  sidebarColor: "#fff",
   sidebarColorActive: "#D1312E",
   sidebarColorText: "#000000",
   sidebarColorTextActive: "#555",

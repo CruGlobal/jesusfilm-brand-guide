@@ -25,50 +25,50 @@ const pages = [
     content: pageLoader(() => import("./WELCOME.md"))
   },
   {
-    title: "Brandmark & Logo",
+    title: "General",
     pages: [
       {
-        path: "/logo",
+        path: "/general/logo",
         title: "Logo",
-        content: pageLoader(() => import("./brandmark/LOGO.md"))
+        content: pageLoader(() => import("./general/LOGO.md"))
       },
       {
-        path: "/brandmark",
-        title: "Brandmark",
-        content: pageLoader(() => import("./brandmark/LOGO.md"))
+        path: "/general/color",
+        title: "Color Usage",
+        content: pageLoader(() => import("./general/COLORUSAGE.md"))
+      },
+    ]
+  },
+  {
+    title: "Web",
+    pages: [
+      {
+        // imports: {Color: require('./specimens/Colors')},
+        path: "/web/color",
+        title: "Color",
+        content: pageLoader(() => import("./web/Colors.js"))
       },
       {
-        path: "/logo-lockups",
-        title: "Logo Lockups",
-        content: pageLoader(() => import("./brandmark/LOGO.md"))
+        styles: ['/components/button.css'],
+        path: "/web/button",
+        title: "Button",
+        content: pageLoader(() => import("./web/Buttons.js"))
+      },
+      {
+        path: "/web/typography",
+        title: "Typography",
+        content: pageLoader(() => import("./web/TYPOGRAPHY.md"))
       }
     ]
   },
   {
-    title: "Atoms",
+    title: "Print",
     pages: [
       {
-        // imports: {Color: require('./specimens/Colors')},
-        path: "/color",
+        path: "/print/color",
         title: "Color",
-        content: pageLoader(() => import("./atoms/Colors.js"))
+        content: pageLoader(() => import("./web/Colors.js"))
       },
-      {
-        styles: ['/components/button.css'],
-        path: "/button",
-        title: "Button",
-        content: pageLoader(() => import("./atoms/Buttons.js"))
-      },
-      {
-        path: "/image",
-        title: "Image",
-        content: pageLoader(() => import("./atoms/IMAGE.md"))
-      },
-      {
-        path: "/typography",
-        title: "Typography",
-        content: pageLoader(() => import("./atoms/TYPOGRAPHY.md"))
-      }
     ]
   },
 ];

@@ -1,4 +1,4 @@
-Images can be used as graphical elements, to document implemtation details with static images or behavioral aspects when animated gifs are used.
+# JFP Logo
 
 ```image
 src: jfm-logo.svg
@@ -7,6 +7,12 @@ span: 3
 title: "JFP Logo"
 description: |
   Jesus Film Project logo downloads are availabe in different color versions.
+```
+
+```image
+src: jfm-logo.svg
+span: 3
+plain: true
 ```
 
 ```download

@@ -55,8 +55,8 @@ export default {
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAFklEQVQI12NQBQF2EGAghQkmwXxSmADZJQiZ2ZZ46gAAAABJRU5ErkJggg==",
 
   // Fonts
-  fontFamily: "'Roboto', sans-serif",
-  fontHeading: "'Roboto', sans-serif",
+  fontFamily: "'SourceSansPro', sans-serif",
+  fontHeading: "'ApercuRegular', sans-serif",
   fontMono: "'Roboto Mono', monospace",
 
   // Base font size in pixels.

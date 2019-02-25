@@ -16,23 +16,46 @@ span: 3
 
 ## Examples
 
-```hint|directive,span-3
+```hint|directive,span-6
 Do
 ```
 
-```hint|warning,span-3
-Don't
-```
-
 ```image
-src: pie-chart-01.svg
+src: group.svg
 plain: true
 span: 3
 ```
 
+```image
+src: group-3.svg
+plain: true
+span: 3
+```
 
 ```image
-src: pie-chart-01.svg
+src: group-4.svg
+plain: true
+span: 3
+```
+
+```image
+src: group-5.svg
+plain: true
+span: 3
+```
+
+```hint|warning,span-6
+Don't
+```
+
+```image
+src: group-6.svg
+plain: true
+span: 3
+```
+
+```image
+src: group-7.svg
 plain: true
 span: 3
 ```

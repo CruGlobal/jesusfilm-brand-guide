@@ -1,14 +1,30 @@
 import React from 'react';
-import {Page, ReactSpecimen, ColorSpecimen} from 'catalog';
+import {Page, ReactSpecimen, ColorSpecimen, DownloadSpecimen} from 'catalog';
 import Color from '../components/Color';
 
 export default () => (
   <Page >
-    <div>
+    <div style={{width: '100%'}}>
       <h1>Examples</h1>
       <h3>Color Swatch</h3>
       <p>The color swatches are useful to document single or important colors like the main brand scheme.</p>
     </div>
+
+    <DownloadSpecimen
+      title="Figma Color Palette"
+      url="/The%20Jesus%20Film%20Project%20Color%20Palette.fig"
+      span={2}
+    />
+    <DownloadSpecimen
+      title="Adobe Swatch Exchange"
+      url="/the-jesusfilm-project.ase"
+      span={2}
+    />
+    <DownloadSpecimen
+      title="Sketch Palette"
+      url="/the-jesusfilm-project.sketchpalette"
+      span={2} 
+    />
 
     <ReactSpecimen span={2}>
       <Color

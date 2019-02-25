@@ -37,17 +37,16 @@ const pages = [
         title: "Color Usage",
         content: pageLoader(() => import("./general/COLORUSAGE.md"))
       },
+      {
+        path: "/general/colors",
+        title: "Color Specs & Downloads",
+        content: pageLoader(() => import("./general/Colors.js"))
+      },
     ]
   },
   {
     title: "Web",
     pages: [
-      {
-        // imports: {Color: require('./specimens/Colors')},
-        path: "/web/color",
-        title: "Color",
-        content: pageLoader(() => import("./web/Colors.js"))
-      },
       {
         styles: ['/components/button.css'],
         path: "/web/button",
@@ -56,7 +55,7 @@ const pages = [
       },
       {
         path: "/web/typography",
-        title: "Typography",
+        title: "Web Typography",
         content: pageLoader(() => import("./web/TYPOGRAPHY.md"))
       }
     ]
@@ -65,9 +64,9 @@ const pages = [
     title: "Print",
     pages: [
       {
-        path: "/print/color",
-        title: "Color",
-        content: pageLoader(() => import("./web/Colors.js"))
+        path: "/print/typography",
+        title: "Print Typography",
+        content: pageLoader(() => import("./print/TYPOGRAPHY.md"))
       },
     ]
   },

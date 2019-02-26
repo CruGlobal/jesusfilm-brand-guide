@@ -13,7 +13,7 @@ lang: css
 
 @font-face {
   font-family: 'ApercuRegular';
-  src: url('/static/apercu_regular.ttf') format('truetype');
+  src: url('/apercu_regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

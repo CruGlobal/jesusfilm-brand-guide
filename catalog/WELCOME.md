@@ -11,13 +11,4 @@ Here you'll find *specs, examples, and downloadable assets* for your designs. Pl
 > This is **awesome!**
   _- Designers_
 
-Questions? Please get in touch!
-- [Drew Warkentin](mailto:drew.warkentin@gmail.com)
-- [Nathan Wilkinson](mailto:nwilkinson22@gmail.com)
-
----
-
-##### Changelog
-
-* 1.0 - 2018-09-10 Project launched
-* 1.1 - 2018-09-11 Nathan Added secondary palette
+Questions? Please get in touch! [Design Team](mailto:design@jesusfilm.org)

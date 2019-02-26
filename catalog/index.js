@@ -60,16 +60,6 @@ const pages = [
       }
     ]
   },
-  {
-    title: "Print",
-    pages: [
-      {
-        path: "/print/typography",
-        title: "Print Typography",
-        content: pageLoader(() => import("./print/TYPOGRAPHY.md"))
-      },
-    ]
-  },
 ];
 
 ReactDOM.render(

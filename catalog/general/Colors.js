@@ -12,18 +12,18 @@ export default () => (
 
     <DownloadSpecimen
       title="Figma Color Palette"
-      url="/The%20Jesus%20Film%20Project%20Color%20Palette.fig"
+      url="/jfp-colors.fig"
       span={2}
     />
     <DownloadSpecimen
       title="Adobe Swatch Exchange"
-      url="/the-jesusfilm-project.ase"
+      url="/jfp-colors.ase"
       span={2}
     />
     <DownloadSpecimen
       title="Sketch Palette"
-      url="/the-jesusfilm-project.sketchpalette"
-      span={2} 
+      url="/jfp-colors.sketchpalette"
+      span={2}
     />
 
     <ReactSpecimen span={2}>

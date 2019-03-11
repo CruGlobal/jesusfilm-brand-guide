@@ -4,7 +4,7 @@ plain: true
 span: 8
 ```
 
-# Jesus Film's official brand guidelines
+# Jesus Film's official brand guidelines (Alpha Version)
 
 Here you'll find *specs, examples, and downloadable assets* for your designs. Please consider this a **living document** that may change over time.
 

@@ -12,7 +12,7 @@ lang: css
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 @font-face {
-  font-family: 'ApercuRegular';
+  font-family: 'Apercu Regular';
   src: url('/apercu_regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -35,7 +35,7 @@ h2, h3, h4, h5, h6 {
 	"headings": [
     { "label": "H1", "value": 62 }
   ],
-  "font": "SourceSansPro"
+  "font": "ApercuRegular"
 }
 ```
 
@@ -49,7 +49,7 @@ h2, h3, h4, h5, h6 {
 		{ "label": "H5", "value": 18 },
 		{ "label": "H6", "value": 16 },
 	],
-  "font": "SourceSansPro"
+  "font": "Source Sans Pro"
 }
 ```
 
@@ -57,7 +57,7 @@ h2, h3, h4, h5, h6 {
 ```type
 {
   "paragraphs": ["16/24"],
-	"font": "SourceSansPro",
+	"font": "Source Sans Pro",
   "color": "#000000"
 }
 ```

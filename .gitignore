@@ -1,3 +1,7 @@
 /node_modules
 .DS_Store
 /catalog/build
+.cache
+public/
+static/admin/*.bundle.*
+yarn-error.log

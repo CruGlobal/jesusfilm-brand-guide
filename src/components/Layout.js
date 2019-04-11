@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Sidebar from '../components/Sidebar'
+import SideBar from './SideBar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 
@@ -44,7 +44,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <div className="columns">
         <div className="column is-2">
-          <Sidebar />
+          <SideBar />
         </div>
         <div className="column is-10">
           {children}

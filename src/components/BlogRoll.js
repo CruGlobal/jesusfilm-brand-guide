@@ -12,7 +12,12 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
-              <article className="tile is-child box notification">
+              <article className="tile is-child box">
+                <p>
+                  <small className="is-size-6 is-block">
+                    {post.frontmatter.date}
+                  </small>
+                </p>
                 <p>
                   <Link
                     className="title has-text-primary is-size-4"
@@ -20,11 +25,9 @@ class BlogRoll extends React.Component {
                   >
                     {post.frontmatter.title}
                   </Link>
-                  <span> &bull; </span>
-                  <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date}
-                  </span>
                 </p>
+
+                <br />
                 <p>
                   {post.excerpt}
                   <br />

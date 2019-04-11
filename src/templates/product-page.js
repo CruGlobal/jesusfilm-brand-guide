@@ -19,50 +19,24 @@ export const ProductPageTemplate = ({
   pricing,
 }) => (
   <section className="section section--gradient">
-    <div className="container">
-      <div className="section">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
             <div className="content">
-              <div
-                className="full-width-image-container margin-top-0"
-                style={{
-                  backgroundImage: `url(${
-                    !!image.childImageSharp
-                      ? image.childImageSharp.fluid.src
-                      : image
-                  })`,
-                }}
-              >
                 <h2
                   className="has-text-weight-bold is-size-1"
                   style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
-                    color: 'white',
-                    padding: '1rem',
+                    marginTop: 0
                   }}
                 >
                   {title}
                 </h2>
-              </div>
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-2">
+                <h3 className="has-text-weight-semibold is-size-2">
                     {heading}
                   </h3>
                   <p>{description}</p>
-                </div>
-              </div>
               <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>
-                </div>
-              </div>
               <div className="tile is-ancestor">
                 <div className="tile is-vertical">
                   <div className="tile">
@@ -101,10 +75,6 @@ export const ProductPageTemplate = ({
               <p className="is-size-5">{pricing.description}</p>
               <Pricing data={pricing.plans} />
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 )
 

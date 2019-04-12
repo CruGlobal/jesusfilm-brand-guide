@@ -7,8 +7,8 @@ public_folder: /img
 
 collections:
   - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+    label: "Team Blog"
+    folder: "src/pages/updates"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -42,7 +42,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/products/index.md"
+      - file: "src/pages/work/products/index.md"
         label: "Products Page"
         name: "products"
         fields:

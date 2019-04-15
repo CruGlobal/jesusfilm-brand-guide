@@ -29,7 +29,7 @@ const SideBar = ({isActive}) => (
           <li><Link to="/work/products">Products</Link></li>
           <li><Link to="/work/tools">Tools</Link></li>
           <li><Link to="/work/processes">Processes</Link></li>
-          <li><Link to="/work/org-chart">Org Chart</Link></li>
+          <li><Link to="/work/team">Team Profiles</Link></li>
         </ul>
         <p className="menu-label">
           Style

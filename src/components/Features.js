@@ -8,15 +8,17 @@ const FeatureGrid = ({ gridItems }) => (
       <div key={item.text} className="column is-6">
         <section className="section">
           <div className="has-text-centered">
-            <div
-              style={{
-                width: '240px',
-                display: 'inline-block',
-              }}
-            >
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
+            <a href={item.url}>
+              <div
+                style={{
+                  maxWidth: '240px',
+                }}
+              >
+                <PreviewCompatibleImage imageInfo={item} />
+              </div>
+            </a>
           </div>
+          <p><a href={item.url}>{item.title}</a></p>
           <p>{item.text}</p>
         </section>
       </div>

@@ -9,10 +9,6 @@ export const CulturePageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section className="section section--gradient">
-      <h1 className="heading is-size-3">
-        {title}
-      </h1>
-      <br />
       <PageContent className="content" content={content} />
     </section>
   )
@@ -28,10 +24,9 @@ const CulturePage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout displayTitle={post.frontmatter.title}>
       <CulturePageTemplate
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
         content={post.html}
       />
     </Layout>

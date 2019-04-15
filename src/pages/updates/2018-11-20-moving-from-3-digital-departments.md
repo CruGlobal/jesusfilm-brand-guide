@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Moving from 3 digital departments to one digital team
+title: Moving from 3 digital departments
 date: 2018-11-20T15:04:10.000Z
 description: Many of you have heard me say that I want to move from 3 happily cooperating departments to one Digital Strategies team. I wanted to take a brief moment to expand on that thought.
 tags:

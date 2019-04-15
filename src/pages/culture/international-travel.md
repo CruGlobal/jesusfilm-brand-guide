@@ -4,8 +4,6 @@ path: /international-travel
 title: International Travel
 ---
 
-# International Travel Guide
-
 "Do I need a visa?"
 
 "What do I say to the customs officer?"

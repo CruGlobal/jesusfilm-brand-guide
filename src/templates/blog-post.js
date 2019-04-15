@@ -22,9 +22,6 @@ export const BlogPostTemplate = ({
       <div className="content">
         <div className="columns">
           <div className="column">
-            <h1 className="title is-size-2">
-              {title}
-            </h1>
             <p>{date}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
@@ -58,7 +55,7 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout displayTitle={post.frontmatter.title}>
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -73,7 +70,6 @@ const BlogPost = ({ data }) => {
           </Helmet>
         }
         tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
       />
     </Layout>
   )

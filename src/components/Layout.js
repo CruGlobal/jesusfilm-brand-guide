@@ -4,7 +4,7 @@ import SideBar from './SideBar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, displayTitle }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
@@ -42,11 +42,21 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <div className="columns">
-        <div className="column is-2">
+      <div className="columns is-gapless is-0">
+        <div className="column is-2" style={{backgroundColor: '#F0EDE3'}}>
           <SideBar />
         </div>
         <div className="column is-10">
+          <div className="wave-container">
+            <div className="wave">
+            </div>
+            <h1 className="title is-size-1" style={{
+              zIndex:100,
+              position: 'absolute',
+              top: 20,
+              left: 85
+            }}>{displayTitle}</h1>
+          </div>
           {children}
         </div>
       </div>

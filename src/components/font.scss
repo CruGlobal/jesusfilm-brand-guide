@@ -2,3 +2,58 @@
   font-family: "Open Sans";
   src: url("/img/apercu_regular.ttf") format("truetype");
 }
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+h1 {
+  font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wave-container {
+  width: calc(100% + 200px);
+  margin-left: -60px;
+  height: 125px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -30px;
+  z-index:-1;
+}
+
+.wave {
+  display: block;
+  position: relative;
+  height: 80px;
+  background: #F0EDE3;
+  z-index:-1;
+}
+
+.wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  right: -25%;
+  top: 40px;
+  z-index:-1;
+}
+
+.wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 600px;
+  background-color: #F0EDE3;
+  left: -25%;
+  top: -480px;
+  z-index:-1;
+}

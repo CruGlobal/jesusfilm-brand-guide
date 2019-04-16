@@ -4,7 +4,7 @@ import SideBar from './SideBar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 
-const TemplateWrapper = ({ children, displayTitle }) => {
+const Layout = ({ children, displayTitle }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div>
@@ -64,4 +64,4 @@ const TemplateWrapper = ({ children, displayTitle }) => {
   )
 }
 
-export default TemplateWrapper
+export default Layout

@@ -3,12 +3,11 @@ templateKey: 'culture-page'
 path: /voice
 title: Voice and Tone
 ---
-#### Tone
+### Tone
 Be respectful
 
-#### Apologies
+### Apologies
 Careful
 
-#### Follow ups
-
-- Don't drop the ball
+### Follow ups
+Don't drop the ball

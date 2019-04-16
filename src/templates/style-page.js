@@ -4,10 +4,9 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const ProductPageTemplate = ({
+export const StylePageTemplate = ({
   image,
   title,
   heading,
@@ -33,7 +32,7 @@ export const ProductPageTemplate = ({
   </section>
 )
 
-ProductPageTemplate.propTypes = {
+StylePageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   intro: PropTypes.shape({
@@ -42,12 +41,12 @@ ProductPageTemplate.propTypes = {
   testimonials: PropTypes.array,
 }
 
-const ProductPage = ({ data }) => {
+const StylePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout displayTitle={frontmatter.title}>
-      <ProductPageTemplate
+      <StylePageTemplate
         image={frontmatter.image}
         heading={frontmatter.heading}
         description={frontmatter.description}
@@ -58,7 +57,7 @@ const ProductPage = ({ data }) => {
   )
 }
 
-ProductPage.propTypes = {
+StylePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -66,10 +65,10 @@ ProductPage.propTypes = {
   }),
 }
 
-export default ProductPage
+export default StylePage
 
-export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
+export const stylePageQuery = graphql`
+  query stylePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import logo from "../../static/img/jfm-logo.svg";
 
 const SideBar = ({isActive}) => (
-      <aside className="menu" style={{margin: 10, marginTop: 25}}>
+      <aside className="menu" style={{margin: 10, marginTop: 25, minHeight: 'calc(100vh - 35px)'}}>
         <Link to="/" title="Logo">
           <img src={logo} alt="JFP" style={{ width: 150 }} />
         </Link>
@@ -12,15 +12,8 @@ const SideBar = ({isActive}) => (
         </p>
         <ul className="menu-list">
           <li><Link to="/culture/mission">Mission</Link></li>
+          <li><Link to="/culture/values">Values</Link></li>
           <li><Link to="/culture/voice">Voice</Link></li>
-          <li><Link to="/culture/international-travel">Travel</Link></li>
-          <li><Link to="/culture/availability">Availability</Link></li>
-        </ul>
-        <p className="menu-label">
-          Updates
-        </p>
-        <ul className="menu-list">
-          <li><Link to="/updates/team-blog">Team Blog</Link></li>
         </ul>
         <p className="menu-label">
           Work
@@ -35,19 +28,9 @@ const SideBar = ({isActive}) => (
           Style
         </p>
         <ul className="menu-list">
-          <li>
-            <a href="#">General</a>
-            <ul>
-              <li><Link to="/style-guide/general/color">Colors</Link></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Web</a>
-            <ul>
-              <li><Link to="/style-guide/web/typography">Typography</Link></li>
-              <li><Link to="/style-guide/web/buttons">Buttons</Link></li>
-            </ul>
-          </li>
+          <li><Link to="/style/colors">Colors</Link></li>
+          <li><Link to="/style/typography">Typography</Link></li>
+          <li><Link to="/style/buttons">Buttons</Link></li>
         </ul>
       </aside>
     );

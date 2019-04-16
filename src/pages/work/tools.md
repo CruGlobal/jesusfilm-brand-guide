@@ -1,7 +1,7 @@
 ---
-templateKey: 'product-page'
-path: /work/products
-title: Products
+templateKey: 'work-page'
+path: /work/tools
+title: Tools
 image: /img/jumbotron.jpg
 heading: Our internal and external solutions
 description: >-

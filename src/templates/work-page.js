@@ -20,12 +20,7 @@ export const WorkPageTemplate = ({
 }) => (
   <section className="section section--gradient">
     <div className="content">
-      <a href={url}>
-        <h3 className="has-text-weight-semibold is-size-2">
-          {heading}
-        </h3>
-      </a>
-      <p>{description}</p>
+      <h3>{description}</h3>
       <Features gridItems={intro.blurbs} />
       { testimonials &&
         <div className="section">

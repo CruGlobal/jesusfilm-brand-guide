@@ -23,6 +23,7 @@ CulturePageTemplate.propTypes = {
 const CulturePage = ({ data }) => {
   const { markdownRemark: post } = data
 
+console.log(data)
   return (
     <Layout displayTitle={post.frontmatter.title}>
       <CulturePageTemplate

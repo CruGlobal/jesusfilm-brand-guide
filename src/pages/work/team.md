@@ -2,47 +2,47 @@
 templateKey: 'work-page'
 path: /work/team
 title: Team
-image: /img/jumbotron.jpg
 heading: Our internal and external solutions
 description: >-
-  JFP builds and maintains products for seekers, practitioners, partners, and
-  internal use. Each product supports our mission, vision and values.
+  Who's who.
 intro:
   blurbs:
-    - image: /img/arclight.png
-      title: >
-        Arclight
+    - title: Joshua Newel
       text: >
-        We distribute films about Jesus through our api.
-      url: >
-        https://www.arclight.org
-    - image: /img/arclight.png
-      title: >
-        JFP App
+        I lead Jesus Film Project, a ministry of Cru, to develop new media and strategies to share the story of Jesus around the globe. Everything we do is rooted in the belief that everyone, everywhere can have a life changing encounter with Jesus if followers of Christ work together.
+
+
+        Since 1979, Jesus Film Project has helped denominations, mission organizations, historical churches and individuals reach more than 3 billion people, resulting in more than 2 million new churches established and over 42 million people in 2017 indicating that they are new followers of Jesus. The "JESUS" film holds a Guinness World Record for most translations, currently at 1656 as of June 2018.
+      url: https://www.linkedin.com/in/joshnewell/
+    - title: Sway Ciaramello
       text: >
-        JF library on iOS and Android, available for download and streaming.
-      url: >
-        https://www.arclight.org
-    - image: /img/arclight.png
-      title: >
-        JFP Website
+        Provide overall Solution Architecture to the Product Engineering Teams on the Jesus Film Digital Team at CRU.
+
+        - Solution Architect / Product Owner of our new Next Steps Platform
+
+        - Solution Architect / Product owner of Arclight
+
+        - Solution Archtect / Technical / Engineering lead on providing low-connectivity / off-line wifibox solutions
+
+        - Management of the backend API platform that serves data to our mobile apps and third-parties.
+
+        - Providing technical assistance and support to Digital Ministry Partners.
+
+        - Adobe Analytics platform and Datawarehouse Big Data integration recommendations, support
+
+        - Oversight of various research projects - including machine learning and video delivery platforms
+
+        - Provide technical leadership as we integrate the different products across our API, analytics and individual platforms - including our datawarehouse and other tracking / reporting services.
+
+      url: mailto:sway.ciaramello@jesusfilm.org
+    - title: Ken Tuttle
       text: >
-        Learn about our mission trips, other things and more other things.
-      url: >
-        https://www.jesusfilm.org
-    - image: /img/arclight.png
-      title: >
-        Slack
+        I connect people with Jesus through film because seeing is believing! I help others learn how they can connect people with Him by sharing with them the wonderful media resources we have developed.
+
+        I also share with friends and partners how God is using JESUS all over the world and opportunities to maximize their stewardship to help expand God's Kingdom. You can view me as an Kingdom investment advisor!
+      url: https://www.linkedin.com/in/kentuttle1/
+    - title: Joshua Friscea
       text: >
-        Slack is where we talk about things
-      url: >
-        https://jfp-digital.slack.com/messages
-main:
-testimonials:
-  - author: Elisabeth Kaurismäki
-    quote: >-
-      The first time I used Arclight, I immediately fell in love.
-  - author: Philipp Trommler
-    quote: >-
-      JFP Mobile app is the greatest thing for Missionaries everywhere. Every tongue, every nation.
+        Technical Project Manager at Jesus Film Project
+      url: https://www.zoominfo.com/p/Joshua-Friscea/-1545239841
 ---

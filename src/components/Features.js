@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import Link from './Link'
+import MarkdownContent from './MarkdownContent'
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
@@ -9,13 +11,16 @@ const FeatureGrid = ({ gridItems }) => (
           {
             item.imageInfo &&
             <div style={{maxWidth: '300px'}}>
-              <a href={item.url}>
+              <Link to={item.url}>
                 <PreviewCompatibleImage imageInfo={item.imageInfo} />
-              </a>
+              </Link>
             </div>
           }
-          <h2><a href={item.url}>{item.title}</a></h2>
-          <p>{item.text}</p>
+          <h2><Link to={item.url}>{item.title}</Link></h2>
+          <MarkdownContent content={item.text} />
+          <Link to={item.url}>
+            <p>{item.url}</p>
+          </Link>
       </div>
     ))}
   </div>

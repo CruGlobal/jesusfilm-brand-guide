@@ -2,47 +2,23 @@
 templateKey: 'work-page'
 path: /work/processes
 title: Processes
-image: /img/jumbotron.jpg
-heading: Our internal and external solutions
 description: >-
-  JFP builds and maintains products for seekers, practitioners, partners, and
-  internal use. Each product supports our mission, vision and values.
+  Move work forward.
 intro:
   blurbs:
-    - image: /img/arclight.png
-      title: >
-        Arclight
+    - title: Add film to Arclight
       text: >
-        We distribute films about Jesus through our api.
-      url: >
-        https://www.arclight.org
-    - image: /img/arclight.png
-      title: >
-        JFP App
+        Contact Sway by email.
+      url: mailto:sway.ciaramello@jesusfilm.org
+    - title: Bugs and Feature requests.
       text: >
-        JF library on iOS and Android, available for download and streaming.
-      url: >
-        https://www.arclight.org
-    - image: /img/arclight.png
-      title: >
-        JFP Website
+        Contact the product managers directly.
+      url: /work/team
+    - title: Add page to JF website.
       text: >
-        Learn about our mission trips, other things and more other things.
-      url: >
-        https://www.jesusfilm.org
-    - image: /img/arclight.png
-      title: >
-        Slack
-      text: >
-        Slack is where we talk about things
-      url: >
-        https://jfp-digital.slack.com/messages
-main:
-testimonials:
-  - author: Elisabeth Kaurismäki
-    quote: >-
-      The first time I used Arclight, I immediately fell in love.
-  - author: Philipp Trommler
-    quote: >-
-      JFP Mobile app is the greatest thing for Missionaries everywhere. Every tongue, every nation.
+        Contact Joshua.
+        He will get a designer to layout the page.
+        Patrick will build it.
+        Be sure to list all requirements of what you need on the page.
+      url: mailto:joshua.friscea@jesusfilm.org
 ---

@@ -2,9 +2,8 @@
 templateKey: 'work-page'
 path: /work/products
 title: Products
-image: /img/jumbotron.jpg
 description: >-
-  JFP builds and maintains products for seekers, practitioners, and partners. Each product supports our mission, vision and values.
+  JFP builds and maintains products for seekers, practitioners, and partners.
 intro:
   blurbs:
     - title: Arclight

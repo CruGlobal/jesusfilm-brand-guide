@@ -3,40 +3,30 @@ templateKey: 'work-page'
 path: /work/products
 title: Products
 image: /img/jumbotron.jpg
-heading: Our internal and external solutions
 description: >-
-  JFP builds and maintains products for seekers, practitioners, partners, and
-  internal use. Each product supports our mission, vision and values.
+  JFP builds and maintains products for seekers, practitioners, and partners. Each product supports our mission, vision and values.
 intro:
   blurbs:
-    - image: /img/arclight.png
-      title: >
-        Arclight
+    - title: Arclight
       text: >
-        We distribute films about Jesus through our api.
-      url: >
-        https://www.arclight.org
-    - image: /img/arclight.png
-      title: >
-        JFP App
+        We distribute films about Jesus through our api. Arclight is used by our
+        apps, our website, and by our partners such as YouVersion.
+      url: https://www.arclight.org
+    - title: JFP App
       text: >
-        JF library on iOS and Android, available for download and streaming.
-      url: >
-        https://www.arclight.org
-    - image: /img/arclight.png
-      title: >
-        JFP Website
+        JesusFilm's complete library on iOS and Android, available for download
+        and streaming in over 1500 languages.
+      url: https://www.jesusfilm.org/app.html
+    - title: JFP Website
       text: >
-        Learn about our mission trips, other things and more other things.
-      url: >
-        https://www.jesusfilm.org
-    - image: /img/arclight.png
-      title: >
-        Slack
+        Learn about our mission trips, how to help, how to donate, and
+        evangelism strategies.
+      url: https://www.jesusfilm.org
+    - title: Nexus
       text: >
-        Slack is where we talk about things
-      url: >
-        https://jfp-digital.slack.com/messages
+        Interfaces with CAS, Couchbase, Arclight and JFP apps. Supports
+        personalization and profiles.
+      url: https://pl.arc.gt
 main:
 testimonials:
   - author: Elisabeth Kaurismäki

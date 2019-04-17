@@ -17,14 +17,6 @@ export const IndexPageTemplate = ({
         <div className="section">
           <div className="content">
               <p>{description}</p>
-              <h3 className="has-text-weight-semibold is-size-2">
-                Latest JFP team updates
-              </h3>
-              <div className="has-text-centered">
-                <Link className="btn" to="/blog">
-                  Read more
-                </Link>
-              </div>
             </div>
       </div>
 )

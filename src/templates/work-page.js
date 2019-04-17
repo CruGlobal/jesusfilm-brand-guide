@@ -26,8 +26,12 @@ export const WorkPageTemplate = ({
         </h3>
       </a>
       <p>{description}</p>
-      <Testimonials testimonials={testimonials} />
       <Features gridItems={intro.blurbs} />
+      { testimonials &&
+        <div className="section">
+          <Testimonials testimonials={testimonials} />
+        </div>
+      }
     </div>
   </section>
 )
@@ -89,6 +93,8 @@ export const workPageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
+              extension
+              publicURL
             }
             text
             title

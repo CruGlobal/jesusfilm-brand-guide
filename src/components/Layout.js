@@ -40,7 +40,7 @@ const Layout = ({ children, displayTitle }) => {
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <meta property="og:image" content="/img/og-image.jpg" />
+        <meta property="og:image" content="/img/share.jpg" />
       </Helmet>
       <div className="columns is-gapless is-0">
         <div className="column is-2" style={{backgroundColor: '#F0EDE3'}}>
@@ -57,7 +57,9 @@ const Layout = ({ children, displayTitle }) => {
               left: 85
             }}>{displayTitle}</h1>
           </div>
-          {children}
+          <div style={{maxWidth: 860}}>
+            {children}
+          </div>
         </div>
       </div>
     </div>

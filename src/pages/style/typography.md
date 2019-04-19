@@ -2,47 +2,36 @@
 templateKey: 'style-page'
 path: /style/typography
 title: Typography
-image: /img/jumbotron.jpg
-heading: Typography
 description: >-
   JFP builds and maintains products for seekers, practitioners, partners, and
   internal use. Each product supports our mission, vision and values.
-intro:
-  blurbs:
+specs:
+  colors:
+  - name: Primary Red
+    hex: EF3340
+    PMS: Red 032
+    CMYK: C 0 M 86 Y 63 K 0 R 239 G 51 B 64
+  - name: Neutral Beige
+    hex: F0EDE3
+    PMS: 7527 @20%
+    CMYK: C5 M 4 Y 9 K 0
+    RGBA: R 240 G 237 B 228
+lessons:
+  - images:
     - image: /img/arclight.png
-      title: >
-        Arclight
-      text: >
-        We distribute films about Jesus through our api.
-      url: >
-        https://www.arclight.org
     - image: /img/arclight.png
-      title: >
-        JFP App
-      text: >
-        JF library on iOS and Android, available for download and streaming.
-      url: >
-        https://www.arclight.org
-    - image: /img/arclight.png
-      title: >
-        JFP Website
-      text: >
-        Learn about our mission trips, other things and more other things.
-      url: >
-        https://www.jesusfilm.org
-    - image: /img/arclight.png
-      title: >
-        Slack
-      text: >
-        Slack is where we talk about things
-      url: >
-        https://jfp-digital.slack.com/messages
-main:
-testimonials:
-  - author: Elisabeth Kaurismäki
-    quote: >-
-      The first time I used Arclight, I immediately fell in love.
-  - author: Philipp Trommler
-    quote: >-
-      JFP Mobile app is the greatest thing for Missionaries everywhere. Every tongue, every nation.
+    description: >-
+      JFP builds and maintains products for seekers, practitioners, partners, and
+      internal use. Each product supports our mission, vision and values.
+    examples:
+      - title: Yo
+        description: >-
+          JFP builds and maintains products for seekers, practitioners, partners, and
+          internal use. Each product supports our mission, vision and values.
+        do:
+          - image: /img/arclight.png
+          - image: /img/arclight.png
+        donot:
+          - image: /img/arclight.png
+          - image: /img/arclight.png
 ---

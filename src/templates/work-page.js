@@ -71,26 +71,10 @@ export const workPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         heading
         description
         intro {
           blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 340, quality: 96) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-              extension
-              publicURL
-            }
             text
             title
             url

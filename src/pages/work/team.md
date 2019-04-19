@@ -7,7 +7,7 @@ description: >-
   Who's who.
 intro:
   blurbs:
-    - title: Joshua Newel
+    - title: Josh Newel
       text: >
         I lead Jesus Film Project, a ministry of Cru, to develop new media and strategies to share the story of Jesus around the globe. Everything we do is rooted in the belief that everyone, everywhere can have a life changing encounter with Jesus if followers of Christ work together.
 

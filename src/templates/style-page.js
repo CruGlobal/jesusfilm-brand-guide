@@ -2,34 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import Lessons from '../components/Lessons'
+import ColorSpecs from '../components/ColorSpecs'
 
 export const StylePageTemplate = ({
-  image,
-  title,
-  heading,
   description,
-  intro,
-  main,
-  testimonials,
-  fullImage,
-  pricing,
-  url,
+  lessons,
+  colorSpecs
 }) => (
-  <section className="section section--gradient">
-    <div className="content">
-      <a href={url}>
-        <h3 className="has-text-weight-semibold is-size-2">
-          {heading}
-        </h3>
-      </a>
-      <p>{description}</p>
-      <Testimonials testimonials={testimonials} />
-      <Features gridItems={intro.blurbs} />
+    <div className="section content">
+      <h2>{description}</h2>
+      <Lessons lessons={lessons} />
+      <h2>Specs</h2>
+      <ColorSpecs colorSpecs={colorSpecs} />
     </div>
-  </section>
 )
 
 StylePageTemplate.propTypes = {
@@ -43,15 +29,13 @@ StylePageTemplate.propTypes = {
 
 const StylePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  console.log(frontmatter.lessons)
   return (
     <Layout displayTitle={frontmatter.title}>
       <StylePageTemplate
-        image={frontmatter.image}
-        heading={frontmatter.heading}
         description={frontmatter.description}
-        intro={frontmatter.intro}
-        testimonials={frontmatter.testimonials}
+        lessons={frontmatter.lessons}
+        colorSpecs={frontmatter.specs.colors}
       />
     </Layout>
   )
@@ -72,32 +56,53 @@ export const stylePageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
         description
-        intro {
-          blurbs {
+        lessons {
+          description
+          images {
             image {
               childImageSharp {
                 fluid(maxWidth: 340, quality: 96) {
                   ...GatsbyImageSharpFluid
                 }
               }
+              publicURL
+              extension
             }
-            text
-            title
-            url
+          }
+          examples {
+            do {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 340, quality: 96) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+                publicURL
+                extension
+              }
+            }
+            donot {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 340, quality: 96) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+                publicURL
+                extension
+              }
+            }
           }
         }
-        testimonials {
-          author
-          quote
+        specs {
+          colors {
+            name
+            hex
+            PMS
+            CMYK
+            RGBA
+          }
         }
       }
     }

@@ -6,6 +6,7 @@ const PreviewCompatibleImage = ({ alt = '', childImageSharp, image }) => {
   const imageStyle = { borderRadius: '5px' }
   const { publicURL, extension } = image
 
+
   if (!!image && !!image.childImageSharp) {
     return (
       <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />

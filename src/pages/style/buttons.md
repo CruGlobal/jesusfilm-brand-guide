@@ -1,5 +1,5 @@
 ---
-templateKey: 'style-page'
+templateKey: 'button-page'
 path: /style/buttons
 title: Buttons
 description: >-

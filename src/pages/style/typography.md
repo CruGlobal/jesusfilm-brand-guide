@@ -1,37 +1,61 @@
 ---
-templateKey: 'style-page'
+templateKey: 'typography-page'
 path: /style/typography
 title: Typography
 description: >-
-  JFP builds and maintains products for seekers, practitioners, partners, and
-  internal use. Each product supports our mission, vision and values.
+  ## Brand Font
+
+  Aperçu is licensed font with restrictions of usage and requirements. If you have any questions please contact [design@jesusfilm.org](mailto:design@jesusfilm.org)
+
+
+  Source Sans Pro is available from [Google Fonts](https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro)
+
+  ## Example CSS
+
+  `@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');`
+
+
+  `@font-face {
+    font-family: 'Apercu Regular';
+    src: url('/apercu_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }`
+
+
+  `h1 {
+    font-family: "Apercu Regular", Helvetica, Arial, sans-serif;
+  }`
+
+
+  `h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }`
 specs:
-  colors:
-  - name: Primary Red
-    hex: EF3340
-    PMS: Red 032
-    CMYK: C 0 M 86 Y 63 K 0 R 239 G 51 B 64
-  - name: Neutral Beige
-    hex: F0EDE3
-    PMS: 7527 @20%
-    CMYK: C5 M 4 Y 9 K 0
-    RGBA: R 240 G 237 B 228
-lessons:
-  - images:
-    - image: /img/arclight.png
-    - image: /img/arclight.png
-    description: >-
-      JFP builds and maintains products for seekers, practitioners, partners, and
-      internal use. Each product supports our mission, vision and values.
-    examples:
-      - title: Yo
-        description: >-
-          JFP builds and maintains products for seekers, practitioners, partners, and
-          internal use. Each product supports our mission, vision and values.
-        do:
-          - image: /img/arclight.png
-          - image: /img/arclight.png
-        donot:
-          - image: /img/arclight.png
-          - image: /img/arclight.png
----
+  typography:
+  - name: Heading 1
+    size: 62
+    unit: px
+    font: Apercu Regular
+    color: '000000'
+  - name: Heading 2
+    size: 42
+    unit: px
+    font: Source Sans Pro
+    color: '000000'
+  - name: Heading 3
+    size: 30
+    unit: px
+    font: Source Sans Pro
+    color: '000000'
+  - name: Heading 4
+    size: 20
+    unit: px
+    font: Source Sans Pro
+    color: '000000'
+  - name: Paragraph
+    size: 16
+    unit: px
+    font: Source Sans Pro
+    color: '000000'
+---  

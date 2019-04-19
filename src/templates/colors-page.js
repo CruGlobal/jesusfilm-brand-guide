@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Lessons from '../components/Lessons'
 import ColorSpecs from '../components/ColorSpecs'
 
-export const StylePageTemplate = ({
+export const ColorsPageTemplate = ({
   description,
   lessons,
   colorSpecs
@@ -18,7 +18,7 @@ export const StylePageTemplate = ({
     </div>
 )
 
-StylePageTemplate.propTypes = {
+ColorsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   intro: PropTypes.shape({
@@ -27,12 +27,12 @@ StylePageTemplate.propTypes = {
   testimonials: PropTypes.array,
 }
 
-const StylePage = ({ data }) => {
+const ColorsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   console.log(frontmatter.lessons)
   return (
     <Layout displayTitle={frontmatter.title}>
-      <StylePageTemplate
+      <ColorsPageTemplate
         description={frontmatter.description}
         lessons={frontmatter.lessons}
         colorSpecs={frontmatter.specs.colors}
@@ -41,7 +41,7 @@ const StylePage = ({ data }) => {
   )
 }
 
-StylePage.propTypes = {
+ColorsPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -49,10 +49,10 @@ StylePage.propTypes = {
   }),
 }
 
-export default StylePage
+export default ColorsPage
 
-export const stylePageQuery = graphql`
-  query stylePage($id: String!) {
+export const colorsPageQuery = graphql`
+  query colorsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

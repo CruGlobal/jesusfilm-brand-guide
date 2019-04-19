@@ -1,5 +1,5 @@
 ---
-templateKey: 'style-page'
+templateKey: 'colors-page'
 path: /style/colors
 title: Colors
 description: >-
@@ -32,7 +32,7 @@ specs:
     PMS: PMS 1807
     CMYK: C 10 M 93 Y 71 K 33 R 164 G 52 B 5
   - name: Secondary Red 4
-    hex: 643335
+    hex: '643335'
     PMS: PMS 1817
     CMYK: C 30 M 85 Y 59 K 70 R 100 G 51 B 53
 lessons:

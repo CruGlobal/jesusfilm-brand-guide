@@ -16,6 +16,14 @@ const SideBar = ({isActive}) => (
           <li><Link to="/culture/voice">Voice</Link></li>
         </ul>
         <p className="menu-label">
+          Style
+        </p>
+        <ul className="menu-list">
+          <li><Link to="/style/colors">Colors</Link></li>
+          <li><Link to="/style/typography">Typography</Link></li>
+          <li><Link to="/style/buttons">Buttons</Link></li>
+        </ul>
+        <p className="menu-label">
           Work
         </p>
         <ul className="menu-list">
@@ -23,14 +31,6 @@ const SideBar = ({isActive}) => (
           <li><Link to="/work/tools">Tools</Link></li>
           <li><Link to="/work/processes">Processes</Link></li>
           <li><Link to="/work/team">Team Profiles</Link></li>
-        </ul>
-        <p className="menu-label">
-          Style
-        </p>
-        <ul className="menu-list">
-          <li><Link to="/style/colors">Colors</Link></li>
-          <li><Link to="/style/typography">Typography</Link></li>
-          <li><Link to="/style/buttons">Buttons</Link></li>
         </ul>
       </aside>
     );

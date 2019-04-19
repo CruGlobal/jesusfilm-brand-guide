@@ -11,7 +11,7 @@ export const WorkPageTemplate = ({
   title,
   heading,
   description,
-  intro,
+  blurbs,
   main,
   testimonials,
   fullImage,
@@ -21,7 +21,7 @@ export const WorkPageTemplate = ({
   <section className="section section--gradient">
     <div className="content">
       <h3>{description}</h3>
-      <Features gridItems={intro.blurbs} />
+      <Features gridItems={blurbs} />
       { testimonials &&
         <div className="section">
           <Testimonials testimonials={testimonials} />
@@ -34,9 +34,7 @@ export const WorkPageTemplate = ({
 WorkPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  blurbs: PropTypes.array,
   testimonials: PropTypes.array,
 }
 
@@ -49,7 +47,7 @@ const WorkPage = ({ data }) => {
         image={frontmatter.image}
         heading={frontmatter.heading}
         description={frontmatter.description}
-        intro={frontmatter.intro}
+        blurbs={frontmatter.blurbs}
         testimonials={frontmatter.testimonials}
       />
     </Layout>
@@ -73,12 +71,10 @@ export const workPageQuery = graphql`
         title
         heading
         description
-        intro {
-          blurbs {
-            text
-            title
-            url
-          }
+        blurbs {
+          text
+          title
+          url
         }
         testimonials {
           author

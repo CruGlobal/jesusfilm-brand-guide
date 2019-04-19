@@ -23,8 +23,7 @@ const Spacer = styled.span`
 export default () => (
   <Layout displayTitle={"Buttons"}>
     <div className="section content">
-      <h1>Examples</h1>
-      <h3>Buttons</h3>
+      <h2>Examples</h2>
       <p>To ensure visual clarity, allow for ample space around the brandmark. This exclusion zone should be free from any other elements. Use the “Pr” in Project as a scalable measuring device.</p>
 
       <div className="columns is-multiline" style={{marginTop: 20}}>
